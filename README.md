@@ -7,6 +7,6 @@ to install screen in Ubuntu.
 <code>screen -ls</code>
 can be used to interact with the screen session once it has be instatiated. All files are stored in the datapool/ directory.
 
-## About the Files
+## Files
 bin: contains all the programs/scripts used here <br>
 makefile: used to run the data server and generate the pdf report from Main.ipynb (future functionality)
