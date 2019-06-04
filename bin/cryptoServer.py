@@ -41,7 +41,7 @@ for j in range(24):
     for i in range(120):
         try:
             writedb(db,getData())
-            time.sleep(1)
+            time.sleep(3)
         except:
             print('Error, will try again')
     datetime=dt.datetime.now().strftime('%Y%m%d%H%M%S')
