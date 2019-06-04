@@ -9,4 +9,4 @@ can be used to interact with the screen session once it has be instatiated. All 
 
 ## Files
 bin: contains all the programs/scripts used here <br>
-makefile: used to run the data server and generate the pdf report from Main.ipynb (future functionality)
+makefile: used to run the data server and generate the pdf report from Main.ipynb
