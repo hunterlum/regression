@@ -4,6 +4,7 @@ import datetime as dt
 import pickle
 import time
 from coinbase.wallet.client import Client
+from tqdm import tqdm
 print('Starting Server')
 def getData():
     key = 'blank'
@@ -38,9 +39,9 @@ db={'Date':[],'Time':[],'BTC':[],'ETH':[],'LTC':[]}
 
 while(True):
 #for j in range(4):
-    for i in range(100):
+    for i in tqdm(range(100)):
         try:
-            print(dt.datetime.now())
+            #print(dt.datetime.now())
             writedb(db,getData())
             time.sleep(3)
         except:
