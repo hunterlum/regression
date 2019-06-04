@@ -35,18 +35,19 @@ def storedb(directory, database):
     return(0)
     
 db={'Date':[],'Time':[],'BTC':[],'ETH':[],'LTC':[]}
-#while(True):
-#Takes about three hours to run
-for j in range(24):
-    for i in range(120):
+
+while(True):
+#for j in range(4):
+    for i in range(100):
         try:
+            print(dt.datetime.now())
             writedb(db,getData())
             time.sleep(3)
         except:
             print('Error, will try again')
     datetime=dt.datetime.now().strftime('%Y%m%d%H%M%S')
     print('Storing at time ', dt.datetime.now())
-    storedb('../datapool/'+datetime,db)
+    storedb('./raw_data/'+datetime,db)
     del(db)
     db={'Date':[],'Time':[],'BTC':[],'ETH':[],'LTC':[]}
 print('Goodbye')
