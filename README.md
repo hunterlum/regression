@@ -1,5 +1,7 @@
 # regression
-note: There a system must have screen to run the server
+
+This repo contains a server that can be used to download cryptocurrency prices. To run it, the first makefile command starts a screen session to run the cryptoServer.py script located in bin/ . Use 
 <code>sudo apt install screen</code>
-use make to start server
-use the 'screen -ls' command to view the data collecting server.
+to install screenin Ubuntu.
+<code>screen -ls</code>
+can be used to interact with the screen session once it has be instatiated.
