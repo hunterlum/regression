@@ -17,4 +17,4 @@ https://datastudio.google.com/open/1ztty4l8Kx1YMtSQIZ4zgcwSlq4jJc3cP
 
 <b>Main.ipynb</b> Most of the work for this project will be contained in this jupyter notebook. It is used to generate the html and pdf report through make. <br>
 
-<b>makefile</b>: used to run the data server and generate the pdf report from Main.ipynb. Running <code>make pdf</code> can be used to create the pdf from <b>Main.ipynb</b> and <code>make clean</code> can be used to delete the reports. 
+<b>makefile</b>: used to run the data server and generate the pdf report from Main.ipynb. Running <code>make reports</code> can be used to create the pdf and html reports from <b>Main.ipynb</b> and <code>make clean</code> can be used to delete them. 
