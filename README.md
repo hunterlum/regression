@@ -9,5 +9,12 @@ https://datastudio.google.com/open/1ztty4l8Kx1YMtSQIZ4zgcwSlq4jJc3cP
 -->
 
 ## Files
-bin: contains all the programs/scripts used here <br>
-makefile: used to run the data server and generate the pdf report from Main.ipynb
+<b>bin/</b>: contains all the programs/scripts used in this repository <br>
+
+<b>data/</b> and <b>raw_data/</b>: The web server stores all the information in <b>raw_data/</b> which gets trasffered into <b>data/</b> after being processed. <br>
+
+<b>template/</b> A template is used to suppress code in the pdf report. <br>
+
+<b>Main.ipynb</b> Most of the work for this project will be contained in this jupyter notebook. It is used to generate the html and pdf report through make. <br>
+
+<b>makefile</b>: used to run the data server and generate the pdf report from Main.ipynb. Running <code>make pdf</code> can be used to create the pdf from <b>Main.ipynb</b> and <code>make clean</code> can be used to delete the reports. 
